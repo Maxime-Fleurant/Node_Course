@@ -1,0 +1,22 @@
+{
+  "name": "node_course",
+  "version": "1.0.0",
+  "description": "Node_Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxime-Fleurant/Node_Course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxime-Fleurant/Node_Course/issues"
+  },
+  "homepage": "https://github.com/Maxime-Fleurant/Node_Course#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
