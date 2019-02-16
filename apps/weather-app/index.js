@@ -12,4 +12,12 @@ const argv = yargs
     })
     .argv;
 
-geocode.geocodeAddress(argv.a)
+geocode.geocodeAddress(argv.a, (err, results) => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(`Adresss: ${results[0].formatted_address}`);
+        console.log(`Longitude: ${results[0].geometry.location.lng}`);
+        console.log(`Latitude: ${results[0].geometry.location.lat}`);
+    }
+})
