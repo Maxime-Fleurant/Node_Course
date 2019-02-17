@@ -11,7 +11,9 @@ module.exports.geocodeAddress = (address, callback) => {
             callback("Something Went Wrong", null);
         } else {
             callback(null, {
-                
+                adress: body.results[0].formatted_address,
+                lng   : body.results[0].geometry.location.lng,
+                lat   : body.results[0].geometry.location.lat
             })
         } 
     });
