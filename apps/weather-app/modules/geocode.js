@@ -18,4 +18,3 @@ module.exports.geocodeAddress = (address, callback) => {
         } 
     });
 }
-
